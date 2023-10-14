@@ -6,7 +6,7 @@ import './store/store';
 
 const App = () => {
   return (
-    <div>
+    <div className="container">
       <h1>Phonebook</h1>
       <FormCreateContact />
       <h2>Contacts</h2>

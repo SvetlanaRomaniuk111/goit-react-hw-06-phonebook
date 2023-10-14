@@ -6,7 +6,7 @@ const ContactList = () => {
   const { items, filteredItems } = useSelector(store => store.contacts);
 
   return (
-    <div className={css.container}>
+    <div>
       {items && (
         <ul className={css.list_group}>
           {(filteredItems ?? items).map(el => (

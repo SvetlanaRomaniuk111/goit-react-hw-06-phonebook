@@ -1,9 +1,10 @@
 import Contact from '../Contact/Contact';
 import css from './ContactList.module.css';
 import { useSelector } from 'react-redux';
+import { selector } from 'store/contacts/selector';
 
 const ContactList = () => {
-  const { items, filteredItems } = useSelector(store => store.contacts);
+  const { items, filteredItems } = useSelector(selector);
 
   return (
     <div>
